@@ -50,6 +50,9 @@
                     <state key="normal" image="plus.circle.fill" catalog="system">
                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="60"/>
                     </state>
+                    <connections>
+                        <action selector="addTapped:" destination="-1" eventType="touchUpInside" id="3RC-mv-zG3"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

@@ -43,7 +43,7 @@ class TaskTVC: UITableViewCell {
         case .low:
             priorityV.backgroundColor = .systemGreen
         case .none:
-            priorityV.backgroundColor = .systemGray6
+            priorityV.backgroundColor = .systemGray3
         }
         
         switch groupType {

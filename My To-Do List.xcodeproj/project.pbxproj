@@ -18,6 +18,8 @@
 		AF464086292CA4E800BFC829 /* PriorityEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF464085292CA4E800BFC829 /* PriorityEnum.swift */; };
 		AF464088292CA52000BFC829 /* TaskGroupDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF464087292CA52000BFC829 /* TaskGroupDM.swift */; };
 		AF46408A292CA57100BFC829 /* GroupTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF464089292CA57100BFC829 /* GroupTypeEnum.swift */; };
+		AF46408D292CD6F100BFC829 /* NewTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF46408B292CD6F100BFC829 /* NewTaskVC.swift */; };
+		AF46408E292CD6F100BFC829 /* NewTaskVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF46408C292CD6F100BFC829 /* NewTaskVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		AF464085292CA4E800BFC829 /* PriorityEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityEnum.swift; sourceTree = "<group>"; };
 		AF464087292CA52000BFC829 /* TaskGroupDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroupDM.swift; sourceTree = "<group>"; };
 		AF464089292CA57100BFC829 /* GroupTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTypeEnum.swift; sourceTree = "<group>"; };
+		AF46408B292CD6F100BFC829 /* NewTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskVC.swift; sourceTree = "<group>"; };
+		AF46408C292CD6F100BFC829 /* NewTaskVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewTaskVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 			children = (
 				AF464078292C9ADF00BFC829 /* HomeVC.swift */,
 				AF464079292C9ADF00BFC829 /* HomeVC.xib */,
+				AF46408B292CD6F100BFC829 /* NewTaskVC.swift */,
+				AF46408C292CD6F100BFC829 /* NewTaskVC.xib */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -164,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF46408E292CD6F100BFC829 /* NewTaskVC.xib in Resources */,
 				AF464081292CA2E400BFC829 /* TaskTVC.xib in Resources */,
 				AF46406D292C9A5000BFC829 /* LaunchScreen.storyboard in Resources */,
 				AF46407B292C9ADF00BFC829 /* HomeVC.xib in Resources */,
@@ -178,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF46408D292CD6F100BFC829 /* NewTaskVC.swift in Sources */,
 				AF464080292CA2E400BFC829 /* TaskTVC.swift in Sources */,
 				AF464061292C9A4E00BFC829 /* AppDelegate.swift in Sources */,
 				AF464088292CA52000BFC829 /* TaskGroupDM.swift in Sources */,

@@ -21,10 +21,20 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
 
     }
+    
+    @IBAction func addTapped(_ sender: Any) {
+        
+        let vc = NewTaskVC(nibName: "NewTaskVC", bundle: nil)
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: false)
+        
+    }
+    
 
 
 }
 
+//MARK: - UITableViewDelegate
 extension HomeVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -33,6 +43,7 @@ extension HomeVC: UITableViewDelegate {
     
 }
 
+//MARK: - UITableViewDataSource
 extension HomeVC: UITableViewDataSource {
     
     func setUpTableView() {
