@@ -76,12 +76,25 @@ extension HomeVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        let v = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 70))
+        let v = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 30))
         v.backgroundColor = .white
         
         let title = groupTasks[section].groupType.rawValue.capitalized+" Tasks"
         
-//        let lbl = UILabel(frame: CGRect(x: 0, y: 0, width: title.widthOfString(using) , height: <#T##Int#>))
+        let lbl = UILabel(frame: CGRect(x: 0, y: 0, width: title.widthOfString(usingFont: .boldSystemFont(ofSize: 17)) + 20 , height: 30))
+        lbl.text = title
+        lbl.layer.cornerRadius = 15
+        lbl.textColor = .green
+        lbl.font = .boldSystemFont(ofSize: 17)
+        lbl.textAlignment = .center
+        lbl.backgroundColor = .systemGray6
+        lbl.clipsToBounds = true
+        lbl.layer.cornerRadius = 15
+        lbl.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner, .layerMaxXMinYCorner, .layerMinXMinYCorner]
+        
+        v.addSubview(lbl)
+        lbl.center = v.center
+        
         
         return v
     }

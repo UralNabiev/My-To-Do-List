@@ -63,7 +63,7 @@ extension UIViewController {
         case .unArchived:
             print("unArchived")
         case .unFinishied:
-            print("unFinishied")
+            print("unFinished")
         case .deleted:
             print("deleted")
         }
