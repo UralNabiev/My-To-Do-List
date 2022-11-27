@@ -53,7 +53,6 @@ extension UIViewController {
             
         case .archived:
             
-            alertVC.addAction(finishedBtn)
             alertVC.addAction(unArchivedBtn)
             
         case .finished:

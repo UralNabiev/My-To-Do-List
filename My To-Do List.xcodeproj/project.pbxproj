@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AF118369293301DC0093E40F /* Ex+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF118368293301DC0093E40F /* Ex+UIViewController.swift */; };
+		AF11836C29331EDB0093E40F /* Ex+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF11836B29331EDB0093E40F /* Ex+String.swift */; };
 		AF464061292C9A4E00BFC829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF464060292C9A4E00BFC829 /* AppDelegate.swift */; };
 		AF46406A292C9A5000BFC829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF464069292C9A5000BFC829 /* Assets.xcassets */; };
 		AF46406D292C9A5000BFC829 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF46406B292C9A5000BFC829 /* LaunchScreen.storyboard */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		AF118368293301DC0093E40F /* Ex+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+UIViewController.swift"; sourceTree = "<group>"; };
+		AF11836B29331EDB0093E40F /* Ex+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+String.swift"; sourceTree = "<group>"; };
 		AF46405D292C9A4E00BFC829 /* My To-Do List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My To-Do List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF464060292C9A4E00BFC829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF464069292C9A5000BFC829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				AF118368293301DC0093E40F /* Ex+UIViewController.swift */,
+				AF11836B29331EDB0093E40F /* Ex+String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				AF464080292CA2E400BFC829 /* TaskTVC.swift in Sources */,
 				AF464061292C9A4E00BFC829 /* AppDelegate.swift in Sources */,
 				AF464088292CA52000BFC829 /* TaskGroupDM.swift in Sources */,
+				AF11836C29331EDB0093E40F /* Ex+String.swift in Sources */,
 				AF464086292CA4E800BFC829 /* PriorityEnum.swift in Sources */,
 				AF118369293301DC0093E40F /* Ex+UIViewController.swift in Sources */,
 				AF464091292E3B1600BFC829 /* PriorityVC.swift in Sources */,

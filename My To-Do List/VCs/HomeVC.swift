@@ -44,13 +44,68 @@ class HomeVC: UIViewController {
 extension HomeVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let group = groupTasks[indexPath.row]
-        showAlert(groupType: group.groupType, title: "Choose what to do", message: nil, type: .actionSheet) { groupType in
+        let group = groupTasks[indexPath.section]
+        showAlert(groupType: group.groupType, title: "Choose what to do", message: nil, type: .actionSheet) { [self] groupType in
             
             guard let groupType = groupType else { return }
             print("type = ", groupType.rawValue)
             
+            switch groupType {
+            case .new:
+                print("new")
+            case .archived:
+                let archivedTask = self.groupTasks[indexPath.section].tasks.remove(at: indexPath.row)
+                groupTasks[1].tasks.append(archivedTask)
+            case .finished:
+                let finishedTask = self.groupTasks[indexPath.section].tasks.remove(at: indexPath.row)
+                groupTasks[2].tasks.append(finishedTask)
+            case .unArchived:
+                let unArchivedTask = self.groupTasks[indexPath.section].tasks.remove(at: indexPath.row)
+                groupTasks[0].tasks.append(unArchivedTask)
+            case .unFinishied:
+                let unFinishedTask = self.groupTasks[indexPath.section].tasks.remove(at: indexPath.row)
+                groupTasks[0].tasks.append(unFinishedTask)
+            case .deleted:
+                self.groupTasks[indexPath.section].tasks.remove(at: indexPath.row)
+            }
+            
+            self.tableView.reloadData()
+            
         }
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let v = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 70))
+        v.backgroundColor = .white
+        
+        let title = groupTasks[section].groupType.rawValue.capitalized+" Tasks"
+        
+//        let lbl = UILabel(frame: CGRect(x: 0, y: 0, width: title.widthOfString(using) , height: <#T##Int#>))
+        
+        return v
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        
+        let group = groupTasks[section]
+        if group.tasks.isEmpty {
+            return 0
+        }
+        
+        return 30
+    }
+    
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let deleteBtn = UIContextualAction(style: .destructive, title: "Delete") { _, _, _ in
+            self.groupTasks[indexPath.section].tasks.remove(at: indexPath.row)
+            self.tableView.reloadData()
+        }
+        
+        let config = UISwipeActionsConfiguration(actions: [deleteBtn])
+        return config
+        
     }
     
 }
