@@ -26,7 +26,7 @@ class TaskTVC: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        
+        selectionStyle = .none
         
     }
 
@@ -34,17 +34,7 @@ class TaskTVC: UITableViewCell {
         
         titleLbl.text = task.title
         subTitleLbl.text = task.subTitle
-        
-        switch task.priority {
-        case .high:
-            priorityV.backgroundColor = .systemRed
-        case .medium:
-            priorityV.backgroundColor = .systemYellow
-        case .low:
-            priorityV.backgroundColor = .systemGreen
-        case .none:
-            priorityV.backgroundColor = .systemGray3
-        }
+        priorityV.backgroundColor = task.priority.setPriorityColor()
         
         switch groupType {
         case .new:
@@ -53,6 +43,12 @@ class TaskTVC: UITableViewCell {
             typeView.backgroundColor = .systemGray5
         case .finished:
             typeView.backgroundColor = .systemGray4
+        case .unArchived:
+            print("unArchived")
+        case .unFinishied:
+            print("unFinishied")
+        case .deleted:
+            print("deleted")
         }
         
     }

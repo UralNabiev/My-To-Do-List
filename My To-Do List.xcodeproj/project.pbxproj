@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF118369293301DC0093E40F /* Ex+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF118368293301DC0093E40F /* Ex+UIViewController.swift */; };
 		AF464061292C9A4E00BFC829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF464060292C9A4E00BFC829 /* AppDelegate.swift */; };
 		AF46406A292C9A5000BFC829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF464069292C9A5000BFC829 /* Assets.xcassets */; };
 		AF46406D292C9A5000BFC829 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF46406B292C9A5000BFC829 /* LaunchScreen.storyboard */; };
@@ -20,9 +21,12 @@
 		AF46408A292CA57100BFC829 /* GroupTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF464089292CA57100BFC829 /* GroupTypeEnum.swift */; };
 		AF46408D292CD6F100BFC829 /* NewTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF46408B292CD6F100BFC829 /* NewTaskVC.swift */; };
 		AF46408E292CD6F100BFC829 /* NewTaskVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF46408C292CD6F100BFC829 /* NewTaskVC.xib */; };
+		AF464091292E3B1600BFC829 /* PriorityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF46408F292E3B1600BFC829 /* PriorityVC.swift */; };
+		AF464092292E3B1600BFC829 /* PriorityVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF464090292E3B1600BFC829 /* PriorityVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF118368293301DC0093E40F /* Ex+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+UIViewController.swift"; sourceTree = "<group>"; };
 		AF46405D292C9A4E00BFC829 /* My To-Do List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My To-Do List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF464060292C9A4E00BFC829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF464069292C9A5000BFC829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +42,8 @@
 		AF464089292CA57100BFC829 /* GroupTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTypeEnum.swift; sourceTree = "<group>"; };
 		AF46408B292CD6F100BFC829 /* NewTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskVC.swift; sourceTree = "<group>"; };
 		AF46408C292CD6F100BFC829 /* NewTaskVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewTaskVC.xib; sourceTree = "<group>"; };
+		AF46408F292E3B1600BFC829 /* PriorityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityVC.swift; sourceTree = "<group>"; };
+		AF464090292E3B1600BFC829 /* PriorityVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriorityVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF11836A293301E10093E40F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AF118368293301DC0093E40F /* Ex+UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		AF464054292C9A4E00BFC829 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				AF464060292C9A4E00BFC829 /* AppDelegate.swift */,
+				AF11836A293301E10093E40F /* Extensions */,
 				AF464082292CA48500BFC829 /* Models */,
 				AF46407D292CA2A200BFC829 /* TVCs */,
 				AF46407C292CA29000BFC829 /* VCs */,
@@ -88,6 +103,8 @@
 				AF464079292C9ADF00BFC829 /* HomeVC.xib */,
 				AF46408B292CD6F100BFC829 /* NewTaskVC.swift */,
 				AF46408C292CD6F100BFC829 /* NewTaskVC.xib */,
+				AF46408F292E3B1600BFC829 /* PriorityVC.swift */,
+				AF464090292E3B1600BFC829 /* PriorityVC.xib */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -172,6 +189,7 @@
 			files = (
 				AF46408E292CD6F100BFC829 /* NewTaskVC.xib in Resources */,
 				AF464081292CA2E400BFC829 /* TaskTVC.xib in Resources */,
+				AF464092292E3B1600BFC829 /* PriorityVC.xib in Resources */,
 				AF46406D292C9A5000BFC829 /* LaunchScreen.storyboard in Resources */,
 				AF46407B292C9ADF00BFC829 /* HomeVC.xib in Resources */,
 				AF46406A292C9A5000BFC829 /* Assets.xcassets in Resources */,
@@ -190,6 +208,8 @@
 				AF464061292C9A4E00BFC829 /* AppDelegate.swift in Sources */,
 				AF464088292CA52000BFC829 /* TaskGroupDM.swift in Sources */,
 				AF464086292CA4E800BFC829 /* PriorityEnum.swift in Sources */,
+				AF118369293301DC0093E40F /* Ex+UIViewController.swift in Sources */,
+				AF464091292E3B1600BFC829 /* PriorityVC.swift in Sources */,
 				AF46408A292CA57100BFC829 /* GroupTypeEnum.swift in Sources */,
 				AF46407A292C9ADF00BFC829 /* HomeVC.swift in Sources */,
 				AF464084292CA49F00BFC829 /* TaskDM.swift in Sources */,

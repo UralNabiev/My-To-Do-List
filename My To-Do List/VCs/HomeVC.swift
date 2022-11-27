@@ -20,12 +20,18 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setUpTableView()
+        
     }
     
     @IBAction func addTapped(_ sender: Any) {
         
         let vc = NewTaskVC(nibName: "NewTaskVC", bundle: nil)
         vc.modalPresentationStyle = .overFullScreen
+        vc.addNewTask = { task in
+            self.groupTasks[0].tasks.append(task)
+            self.tableView.reloadData()
+        }
         self.present(vc, animated: false)
         
     }
@@ -38,7 +44,13 @@ class HomeVC: UIViewController {
 extension HomeVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        
+        let group = groupTasks[indexPath.row]
+        showAlert(groupType: group.groupType, title: "Choose what to do", message: nil, type: .actionSheet) { groupType in
+            
+            guard let groupType = groupType else { return }
+            print("type = ", groupType.rawValue)
+            
+        }
     }
     
 }

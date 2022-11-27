@@ -20,20 +20,20 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSW-9t-YtT">
                         <rect key="frame" x="20" y="8" width="375" height="127"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="LoS-fu-jeW">
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LoS-fu-jeW">
                                 <rect key="frame" x="20" y="8" width="335" height="111"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="t69-4m-OZn">
-                                        <rect key="frame" x="0.0" y="29" width="235" height="53.5"/>
+                                        <rect key="frame" x="0.0" y="29" width="295" height="53.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xb1-Bw-c8R">
-                                                <rect key="frame" x="0.0" y="0.0" width="235" height="23"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="23"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pa-xW-Ngd">
-                                                <rect key="frame" x="0.0" y="33" width="235" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pa-xW-Ngd">
+                                                <rect key="frame" x="0.0" y="33" width="295" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <nil key="highlightedColor"/>
@@ -63,6 +63,11 @@
                             <constraint firstAttribute="bottom" secondItem="LoS-fu-jeW" secondAttribute="bottom" constant="8" id="Qjb-xB-bCr"/>
                             <constraint firstItem="LoS-fu-jeW" firstAttribute="top" secondItem="fSW-9t-YtT" secondAttribute="top" constant="8" id="XQV-nn-cmd"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
